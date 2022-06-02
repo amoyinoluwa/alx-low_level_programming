@@ -1,18 +1,20 @@
-#include <stdio.h>                                                                                                                                                                                                                                                          
-/** 
- * main - contains all codes                                                                                                                   
- * sizeof - prints the size of the data type          
- * Return: Success
- */                                                                                                                    /                                                                                                                                             
-                                                                                                                                                
+#include <stdio.h>
+
+/**
+ * main - contains main program
+ * sizeof - size of data types
+ * Return: returns zero
+ */
+
 int main(void)                                                                                                                                 
 {
 
-printf("Size of a char: %d byte(s)\n", sizeof(char));
-printf("Size of an int: %d byte(s)\n", sizeof(int));
-printf("Size of a long int: %d byte(s)\n", sizeof(long int));
-printf("Size of a long long int: %d byte(s)\n", sizeof(long long int));
-printf("Size of a float: %d byte(s)\n", sizeof(float));
-return (0);
+	printf("Size of a char: %d byte(s)\n", sizeof(char));
+	printf("Size of an int: %d byte(s)\n", sizeof(int));
+	printf("Size of a long int: %d byte(s)\n", sizeof(long int));
+	printf("Size of a long long int: %d byte(s)\n", sizeof(long long int));
+	printf("Size of a float: %d byte(s)\n", sizeof(float));
+
+	return (0);
 
 }
