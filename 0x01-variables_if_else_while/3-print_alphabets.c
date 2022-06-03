@@ -1,10 +1,9 @@
 #include <stdio.h>
 /**
- * main - start of main program
  * printVals - recursive function to print characters.
  * @start: first character to be printed
  * @end: last character to be printed
- * Return: Success
+ * Return: Characters from start to end
  */
 
 int printVals(char start, char end)
@@ -16,6 +15,13 @@ int printVals(char start, char end)
 	}
 	return (printVals(start, end));
 }
+
+/**
+ * main - start of main program
+ *
+ * Return: Successs
+ */
+
 int main(void)
 {
 	printVals('a', 'z');
