@@ -4,7 +4,7 @@
 /**
  * main - entry point of program
  * rand - generates random numbers
- * Return - Success
+ * Return: Success
  */
 
 int main(void)
