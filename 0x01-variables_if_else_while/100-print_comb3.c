@@ -17,10 +17,10 @@ int main(void)
 		{
 			putchar(j);
 			putchar(k);
-			putchar(' ');
 			if (j != (8 + '0') && k != (10 + '0'))
 			{
 				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
