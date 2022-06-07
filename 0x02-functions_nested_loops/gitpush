@@ -1,0 +1,8 @@
+#!/bin/bash
+function gitpush() {
+git add .
+git commit -m --
+git push
+}
+
+gitpush

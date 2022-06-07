@@ -7,5 +7,5 @@
 
 int print_last_digit(int num)
 {
-	return (num % 10);
+	return (num <= 0 ? putchar('0'+ ((num * -1) % 10)) : putchar('0'+ (num % 10)));
 }
