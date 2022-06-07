@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * _isalpha - function to check if a character is an alphabet
+ * _islower - function to check if a character is a lower case
  *
  * Return: 0 or 1
  */
 
-int _isalpha(int c)
+int _islower(int c)
 {
-	return (c >= 'A' && c <= 'z' ? 1 : 0);
+	return (c >= 'a' && c <= 'z' ? 1 : 0);
 }
