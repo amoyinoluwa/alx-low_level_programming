@@ -7,5 +7,5 @@
 
 int _abs(int i)
 {
-	return (putchar(i + (abs(-10) % 10)));
+	return (i <= 0 ? i * -1 : i)
 }
