@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * main - main program
  *
@@ -8,7 +8,13 @@
 int main(void)
 {
 	char str[] = "_putchar";
-	printf("%s", str);
-	putchar("\n");
+	int i= 0;
+
+	while (i < sizeof(str)-1)
+	{
+		_putchar(str[i]);
+		i++;
+	}
+	_putchar("\n");
 	return (0);
 }
