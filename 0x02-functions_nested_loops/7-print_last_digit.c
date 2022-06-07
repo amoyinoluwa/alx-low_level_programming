@@ -5,7 +5,7 @@
  * Return: Last digit of num
  */
 
-int print_last_digit(int num)
+int print_last_digit(int i)
 {
-	return (num <= 0 ? putchar('0'+ ((num * -1) % 10)) : putchar('0'+ (num % 10)));
+	return (i <= 0 ? _putchar(((i * -1) % 10) + '\0') : _putchar((i % 10) + '\0'));
 }
