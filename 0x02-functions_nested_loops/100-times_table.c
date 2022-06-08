@@ -39,7 +39,10 @@ void multiply(int n)
 			{
 				putchar(',');
 				putchar(' ');
-				putchar(' ');
+				if (!(k >= 100))
+				{
+					putchar(' ');
+				}
 			}
 		}
 		putchar('\n');
