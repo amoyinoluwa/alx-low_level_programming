@@ -1,10 +1,10 @@
 #include "main.h"
-/** times_table - time table function
+/** multiply - time table function
  * @n: number argument
  * Return: none
  */
 
-void times_table(int n)
+void multiply(int n)
 {
 	int i, j, k;
 
@@ -55,7 +55,7 @@ void print_times_table(int n)
 {
 	if (!(n < 0 || n > 15))
 	{
-		times_table(n);
+		multiply(n);
 	}
 	else
 	{
