@@ -1,31 +1,33 @@
 #include "main.h"
 #include <stdio.h>
+
 /**
- * print_to_98 - function to print numbers
+ * print_to_98 - function to print numbers up to 98
+ *
  * @n: number argument
- * Return: numbers
+ *
+ * Return: none
  */
 
 void print_to_98(int n)
 {
-	int i, target, comma = 0;
-
-	target = 98;
-	if (n <= target)
+	if (n < 98)
 	{
-		for (i = n; i <= target; i++)
+		while (n < 98)
 		{
-			comma == 0 ? comma = 1 : printf(", ");
-			printf("%d", i);
+			printf("%d, ", n);
+			n++;
 		}
+		printf("%d", 98);
 	}
 	else
 	{
-		for (i = n; i >= target; i--)
+		while (98 < n)
 		{
-			comma == 0 ? comma = 1 : printf(", ");
-			printf("%d", i);
+			printf("%d, ", n);
+			n--;
 		}
+		printf("%d", 98);
 	}
 	putchar('\n');
 }
