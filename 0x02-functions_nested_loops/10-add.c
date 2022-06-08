@@ -10,14 +10,6 @@ int add(int a, int b)
 {
 	int sum = a + b;
 
-	if (sum >= 10)
-	{
-		putchar((sum / 10) + '0');
-		return (putchar((sum % 10) + '0'));
-	}
-	else
-	{
-		return (putchar((sum % 10) + '0'));
-	}
+	return (sum);
 }
 
