@@ -1,5 +1,6 @@
 #include "main.h"
-/** multiply - time table function
+/**
+ * multiply - time table function
  * @n: number argument
  * Return: none
  */
@@ -52,7 +53,7 @@ void multiply(int n)
 }
 
 /**
- * print_times_table - function to print times times of n
+ * multiply - function to print times times of n
  * @n: number argument
  * Return: none
  */
@@ -65,6 +66,6 @@ void print_times_table(int n)
 	}
 	else
 	{
-		putchar('\0');
+		return;
 	}
 }
