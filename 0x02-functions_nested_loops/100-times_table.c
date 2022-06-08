@@ -23,6 +23,7 @@ void multiply(int n)
 				}
 				else
 				{
+					putchar(' ');
 					putchar((k / 10) + '0');
 					putchar((k % 10) + '0');
 				}
@@ -33,6 +34,7 @@ void multiply(int n)
 				{
 					putchar(' ');
 				}
+				putchar(' ');
 				putchar((k % 10) + '0');
 			}
 			if (j != n)
