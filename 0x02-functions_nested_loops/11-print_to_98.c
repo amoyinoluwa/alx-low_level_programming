@@ -7,23 +7,24 @@
 
 void print_to_98(int n)
 {
-	if (n < 98)
+	int i, target, comma = 0;
+
+	target = 98;
+	if (n <= target)
 	{
-		while (n < 98)
+		for (i = n; i <= target; i++)
 		{
-			printf("%d, ", n);
-			n++;
+			comma == 0 ? comma = 1 : printf(", ");
+			printf("%d", i);
 		}
-		printf("%d", 98);
 	}
 	else
 	{
-		while (98 < n)
+		for (i = n; i >= target; i--)
 		{
-			printf("%d, ", n);
-			n--;
+			comma == 0 ? comma = 1 : printf(", ");
+			printf("%d", i);
 		}
-		printf("%d", 98);
 	}
 	putchar('\n');
 }
