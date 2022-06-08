@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * multiply - time table function
+ * print_times_table - time table function
  * @n: number argument
  * Return: none
  */
 
-void multiply(int n)
+void print_times_table(int n)
 {
 	int i, j, k;
 
