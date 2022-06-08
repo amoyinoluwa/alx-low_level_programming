@@ -9,6 +9,10 @@ void multiply(int n)
 {
 	int i, j, k;
 
+	if ((n < 0 || n > 15))
+	{
+		return;
+	}
 	for (i = 0; i <= n; i++)
 	{
 		for (j = 0; j <= n; j++)
@@ -49,23 +53,5 @@ void multiply(int n)
 			}
 		}
 		putchar('\n');
-	}
-}
-
-/**
- * multiply - function to print times times of n
- * @n: number argument
- * Return: none
- */
-
-void print_times_table(int n)
-{
-	if (!(n < 0 || n > 15))
-	{
-		multiply(n);
-	}
-	else
-	{
-		return;
 	}
 }
