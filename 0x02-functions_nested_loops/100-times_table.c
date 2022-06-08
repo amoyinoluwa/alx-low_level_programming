@@ -33,18 +33,18 @@ void multiply(int n)
 				if (j != 0)
 				{
 					putchar(' ');
+					putchar(' ');
+					putchar(k + '0');
 				}
-				putchar(' ');
-				putchar((k % 10) + '0');
+				else
+				{
+					putchar(k + '0');
+				}
 			}
 			if (j != n)
 			{
 				putchar(',');
 				putchar(' ');
-				if (!(k >= 100))
-				{
-					putchar(' ');
-				}
 			}
 		}
 		putchar('\n');
