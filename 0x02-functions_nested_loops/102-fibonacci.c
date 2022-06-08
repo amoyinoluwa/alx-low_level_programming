@@ -10,6 +10,7 @@ int main(void)
 	int i;
 
 	unsigned long second_last, last, temp;
+
 	second_last = 1;
 	last = 1;
 	printf("%d, ", 1);
@@ -24,5 +25,6 @@ int main(void)
 			printf(", ");
 		}
 	}
+	printf("\n");
 	return (0);
 }
