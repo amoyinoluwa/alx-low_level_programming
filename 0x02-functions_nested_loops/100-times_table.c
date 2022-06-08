@@ -39,6 +39,7 @@ void multiply(int n)
 			{
 				putchar(',');
 				putchar(' ');
+				putchar(' ');
 			}
 		}
 		putchar('\n');
