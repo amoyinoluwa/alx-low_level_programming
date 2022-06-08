@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_to_98 - function to print numbers up to 98
+ * print_to_98 - function to print numbers
  * @n: number argument
  * Return: numbers
  */
