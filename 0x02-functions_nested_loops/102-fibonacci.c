@@ -9,7 +9,7 @@ int main(void)
 {
 	int i;
 
-	unsigned long, second_last, last, temp;
+	unsigned long second_last, last, temp;
 	second_last = 1;
 	last = 1;
 	printf("%d, ", 1);
