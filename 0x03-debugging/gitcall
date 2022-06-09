@@ -1,0 +1,7 @@
+function gitcall() {
+git add .
+git commit -m --
+git push
+}
+
+gitcall
