@@ -2,6 +2,7 @@
 /**
  * print_number - function to print a number
  * @n: number argument
+ * Description: Uses putchar to print long numbers
  * Return: none
  */
 
