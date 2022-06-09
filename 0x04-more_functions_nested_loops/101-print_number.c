@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_number - function to print a number
  * @n: number argument
@@ -32,7 +33,7 @@ void print_number(int n)
 		{
 			_putchar(digit / temp + '0');
 		}
-		digit %= temp
+		digit %= temp;
 		temp /= 10;
 	}
 }
