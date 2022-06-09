@@ -1,4 +1,4 @@
-#include "main.h"i
+#include "main.h"
 /**
  * print_number - function to print a number
  * @n: number argument
