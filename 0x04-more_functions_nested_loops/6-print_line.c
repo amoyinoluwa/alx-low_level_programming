@@ -14,7 +14,7 @@ void print_line(int n)
 		putchar('\n');
 		return;
 	}
-	while (i < n)
+	while (i <= n)
 	{
 		putchar('-');
 		i++;
