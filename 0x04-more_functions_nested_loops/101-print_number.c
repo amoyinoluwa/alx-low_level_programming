@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include "main.h"
+#include "main.h"i
 /**
  * print_number - function to print a number
  * @n: number argument
@@ -11,11 +10,11 @@ void print_number(int n)
 	if (n < 0)
 	{
 		n *= -1;
-		putchar('-');
+		_putchar('-');
 	}
 	if (n != 0)
 	{
 		print_number(n / 10);
-		putchar((n % 10) + '0');
+		_putchar((n % 10) + '0');
 	}
 }
