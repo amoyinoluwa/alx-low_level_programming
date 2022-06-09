@@ -1,7 +1,8 @@
 #include "main.h"
 /**
  * print_triangle - prints triangle
- *
+ * Description: This prints a triangle in the terminal
+ * @size: size of triangle
  * Return: none
  */
 
