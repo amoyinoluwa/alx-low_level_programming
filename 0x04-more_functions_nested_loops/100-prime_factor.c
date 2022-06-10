@@ -1,35 +1,25 @@
 #include <stdio.h>
+#include <math.h>
+
 /**
- * main - main program to find the largest prime factor
- *
+ * main - defines main function for largest factor
+ * Description: This program find largest factor of 612852475143
  * Return: Success
  */
 
 int main(void)
 {
-	long long int n;
-	
-	n = 612852475143;
+	int c;
+	long num = 612852475143;
 
-	long int divisor = 2, end = 0, max;
-
-	while (n != 0)
+	for (c = (int) sqrt(num); c > 2; c++)
 	{
-		if (n % divisor != 0)
+		if (num % c == 0)
 		{
-			divisor += 1;
-		}
-		else
-		{
-			max = n;
-			n /= divisor;
-			if (n == 1)
-			{
-				printf("%d\n", max);
-				end = 1;
-				break;
-			}
+			printf("%d\n", c);
+			break;
 		}
 	}
+
 	return (0);
 }
