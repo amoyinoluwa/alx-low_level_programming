@@ -1,7 +1,7 @@
 /**
  * _strcpy - string copy function
- * @src - origin string
- * @dest - destination string
+ * @src: origin string
+ * @dest: destination string
  * Return: copied string
  */
 
