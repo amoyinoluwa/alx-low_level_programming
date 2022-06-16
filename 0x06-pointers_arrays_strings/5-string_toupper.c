@@ -1,11 +1,11 @@
 #include "main.h"
 /**
  * string_toupper - converts string to upper case
- * @str: string argument
+ * @s: string argument
  * Return: Capitalized string
  */
 
-char *string_toupper(char *str)
+char *string_toupper(char *s)
 {
 	int a = 0;
 
@@ -17,5 +17,5 @@ char *string_toupper(char *str)
 		}
 		a++;
 	}
-	return (str);
+	return (s);
 }

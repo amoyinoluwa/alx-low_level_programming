@@ -1,9 +1,10 @@
 #include "main.h"
 /**
- * strncpy - function to copy str of specified length from src to dest
+ * _strncpy - function to copy str of specified length from src to dest
  * @src: source string
  * @dest: destination string
  * @n: length to copy
+ * Return: new string
  */
 
 char *_strncpy(char *dest, char *src, int n)
