@@ -1,16 +1,5 @@
 #include "main.h"
 /**
- * _sqrt_recursion - eval sqrt
- * @n: param val
- * Return: sqrt val
- */
-
-int _sqrt_recursion(int n)
-{
-	return (sqrt_value(1, n));
-}
-
-/**
  * sqrt_value - recursion function to find square root
  * @a: integer to be squared
  * @b: int b is square of a
@@ -31,4 +20,15 @@ int sqrt_value(int a, int b)
 	{
 		return (sqrt_value((a + 1), b));
 	}
+}
+
+/**
+ * _sqrt_recursion - eval sqrt
+ * @n: param val
+ * Return: sqrt val
+ */
+
+int _sqrt_recursion(int n)
+{
+	return (sqrt_value(1, n));
 }
