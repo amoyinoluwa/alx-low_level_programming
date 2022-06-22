@@ -28,5 +28,7 @@ int sqrt_value(int a, int b)
 		return (a);
 	}
 	else
+	{
 		return (sqrt_value((a + 1), b));
+	}
 }
