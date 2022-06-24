@@ -49,11 +49,7 @@ int main(int argc, char **argv)
 				return (1);
 			}
 		}
-		printf("%d\n", sum);
 	}
-	else
-	{
-		printf("%d\n", 0);
-	}
+	printf("%d\n", sum);
 	return (0);
 }
