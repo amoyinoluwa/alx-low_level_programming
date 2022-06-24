@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include "main.h"
 /**
  * isNumber - function to check if input is number
  * @str: string args
