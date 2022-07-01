@@ -1,9 +1,11 @@
 #include "main.h"
+
 /**
  * _memcpy - copies n bytes from src to dest
  * @dest: destination
  * @src: source
  * @n: number of bytes
+ *
  * Return: dest string
  */
 
@@ -17,6 +19,15 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	}
 	return (dest);
 }
+
+/**
+ * _realloc - reallocates memory from old to new size
+ * @ptr: array containing elements
+ * @old_size: size of ptr
+ * @new_size: size of new arr
+ *
+ * Return: new arr
+ */
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
