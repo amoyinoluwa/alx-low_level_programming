@@ -35,18 +35,18 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 
 	if (ptr == NULL)
 	{
-		return (malloc(new_size * sizeof(int)));
+		return (malloc(new_size));
 	}
 	if (new_size == old_size)
 	{
 		return (ptr);
 	}
-	if (ptr != NULL && new_size < 1)
+	if (ptr != NULL && new_size == 0)
 	{
 		free(ptr);
 		return (NULL);
 	}
-	new_arr = malloc(new_size * sizeof(int));
+	new_arr = malloc(new_size);
 	if (new_arr == NULL)
 	{
 		return (NULL);
