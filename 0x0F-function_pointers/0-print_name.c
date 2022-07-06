@@ -2,6 +2,7 @@
 
 /**
  * print_name - function to execute functions
+ * @name: name to be printed
  * @f: function pointer
  * Return: nothing
  */
