@@ -16,11 +16,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	if (separator == NULL)
 		return;
 
-	va_start (str, n);
+	va_start(str, n);
 
 	for (i = 0; i < n; i++)
 	{
-		ch = va_arg (str, char*);
+		ch = va_arg(str, char*);
 
 		if (ch == NULL)
 		{
@@ -34,5 +34,5 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	}
 	printf("\n");
 
-	va_end (str);
+	va_end(str);
 }
