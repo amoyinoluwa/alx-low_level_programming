@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * list_len - initializes members of linked list struct
+ * print_list - initializes members of linked list struct
  * @h: pointer to struct
  * Return: number of elements in linked list
  */
