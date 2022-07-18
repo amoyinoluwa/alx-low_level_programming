@@ -5,6 +5,7 @@
  * @head: first node in linked list
  * @idx: index to add new node
  * @n: data of new node
+ * Return: ptr to current node or NULL
  */
 
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
