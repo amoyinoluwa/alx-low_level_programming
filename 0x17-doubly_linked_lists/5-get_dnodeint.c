@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * get_nodeint_at_index - gets node at specified index
+ * get_dnodeint_at_index - gets node at specified index
  * @head: head of linked list
  * @index: index of linked list
  * Return: node at index
