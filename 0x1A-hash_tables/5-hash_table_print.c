@@ -40,10 +40,10 @@ void hash_table_print(const hash_table_t *ht)
 	unsigned long int i, items;
 	hash_node_t *node;
 
-	items = 0;
-	printf("{");
 	if (count(ht))
 	{
+		items = 0;
+		printf("{");
 		for (i = 0; i < ht->size; i++)
 		{
 			if (ht->array[i])
@@ -59,6 +59,7 @@ void hash_table_print(const hash_table_t *ht)
 				}
 			}
 		}
+		printf("}\n");
 	}
-	printf("}\n");
+	return;
 }
