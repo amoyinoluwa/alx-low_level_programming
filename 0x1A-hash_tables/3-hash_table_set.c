@@ -24,14 +24,13 @@ void free_mem(hash_node_t *node)
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	unsigned long int hash_idx;
-	hash_node_t *temp, *node, *current;
+	hash_node_t *temp, *current;
 
 	if (key[0] == '\0' || ht == NULL || ht->array == NULL || key == NULL || value == NULL)
 		return (0);
 
-	hash_idx = key_index((unsigned char *)key, ht->size);
-	node = ht->array[hash_idx];
-	temp = node;
+	hash_idx = key_index((const unsigned char *)key, ht->size);
+	temp = ht->array[hash_idx];
 
 	while (temp)
 	{
@@ -55,8 +54,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			free_mem(current);
 			return (0);
 		}
-		current->next = node;
-		node = current;
+		current->next = ht->array[hash_idx];
+		ht->array[hash_idx] = current;
 	}
 	else
 	{
