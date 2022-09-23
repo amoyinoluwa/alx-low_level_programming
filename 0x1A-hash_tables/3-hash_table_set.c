@@ -28,10 +28,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (key[0] == '\0' || ht == NULL || ht->array == NULL || key == NULL || value == NULL)
 		return (0);
-
 	hash_idx = key_index((const unsigned char *)key, ht->size);
 	temp = ht->array[hash_idx];
-
 	while (temp)
 	{
 		if (strcmp(temp->key, key) == 0)
